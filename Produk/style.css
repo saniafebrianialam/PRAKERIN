@@ -1,0 +1,54 @@
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* font-family: 'Playfair Display', serif;  */
+}
+
+/* @media (min-width: 1024px) { 
+   .face{
+     display: flex;
+    padding-bottom: 33px; 
+    justify-content: space-between;
+     font-size: 14px;
+      color:#9A9A9A;
+   }
+} */
+
+body{
+   margin: 0;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+#container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+#image{
+   width: calc(25% - 5px);
+   margin-bottom: 10px;
+  
+}
+
+#image img{
+   width: 288px;
+}
+.load-more{
+   display: block;
+   margin: auto;
+   height: 50px;
+   padding: 0 50px;
+   border: 0;
+   border-radius: 6px;
+   background-color: rgb(159, 114, 156);
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   transition: .3s linear;
+}
+
+.load-more:hover{
+   opacity: .8;
+}
+
+

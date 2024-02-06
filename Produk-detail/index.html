@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <style>
+    .slick-dots {
+      width: 160%;
+     bottom: -69px;
+      
+    }
+
+
+    .slick-dots li {
+      background-color:white;
+      height: 4px;
+      width: 40px;
+      padding-left: 16px;
+
+    }
+
+    .slick-dots li.slick-active {
+      
+      background-color: white;
+      padding-left: 16px;
+      height: 10px;
+      width: 40px;
+     
+
+    }
+
+    .slick-dots li button:before {
+      content: none;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+
+          padding: {
+            DEFAULT: '1rem',
+            sm: '2rem',
+            lg: '2.5rem',
+            xl: '3rem',
+            '2xl': '4rem',
+          },
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins:wght@200;400;500;600&display=swap"
+  rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans&family=Poppins:wght@200;400;500;600&display=swap"
+  rel="stylesheet">
+
+<body>
+  <header class="container">
+    <div class="pb-[28px]">
+      <nav class="flex justify-between py-8 text-[#005C4E]">
+        <!-- Menu left -->
+        <ul class="flex gap-[18px] items-center">
+          <li><a href="/index.html" class="hover:font-bold text-sm font-Plus-Jakarta-sans">Home</a></li>
+          <li><a href="/page/Produk/index.html" class="hover:font-bold text-sm font-Plus-Jakarta-sans">Produk</a></li>
+          <li><a href="/page/blog/index.html" class="hover:font-bold text-sm font-Plus-Jakarta-sans">Blog</a></li>
+        </ul>
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="image/Logo (1).png" class="h-10">
+          <a href="ms" class="pt-2 pl-2 font-bold text-sm">MangStore</a>
+        </div>
+
+        <!-- Menu Right -->
+        <ul class="flex items-center gap-[18px]">
+          <img src="image/Group 1597883047.png" class="h-6">
+          <img src="image/Group 1597883049.png" class="h-6">
+          <a href="/page/contact/index.html" class="hover:font-bold text-sm font-Plus-Jakarta-sans">Contact Us</a>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <article class=" container lg:flex pb-10">
+    <div class="grid grid-cols-2 gap-4 w-[60%] ">
+      <img src="image/Rectangle 832 (1).png" class="w-[100%] hidden lg:block">
+      <img src="image/Rectangle 832 (2).png" class="w-[100%] hidden lg:block">
+      <img src="image/Rectangle 832 (5).png" class="w-[100%] hidden lg:block">
+      <img src="image/Rectangle 832 (1).png" class="w-[100%] hidden lg:block">
+      <img src="image/Rectangle 832 (2).png" class="w-[100%] hidden lg:block">
+      <img src="image/Rectangle 832 (5).png" class="w-[100%] hidden lg:block">
+    </div>
+    <div class="lg:hidden">
+      <img src="image/Rectangle 832 (4).png" class="w-[100%]">
+      <div class="grid grid-cols-4">
+        <img src="image/Rectangle 832 (4).png" class="w-[100%]">
+        <img src="image/Rectangle 832 (4).png" class="w-[100%]">
+        <img src="image/Rectangle 832 (4).png" class="w-[100%]">
+        <img src="image/Rectangle 832 (4).png" class="w-[100%]">
+      </div>
+    </div>
+    <section class="pl-4 pt-12 lg:pt-0 w-[100%] lg:w-[40%] flex flex-col gap-y-4 ">
+      <div class="flex flex-col gap-y-4">
+        <h2 style="font-family: playfair display;" class="text-3xl lg:text-2xl">Curology cleaner</h2>
+        <p class="text-[#6E6E6E]">Aloefera</p>
+        <p class="text-[32px] text-black font-bold leading-normal ">$50</p>
+        <p class="text-[#6E6E6E]" class="pt-4">Variant : </p>
+        <div class="flex gap-2.5 pt-2.5">
+          <button class="divide-solid text-[#6E6E6E] border-[1px] border-[#6E6E6E] p-2.5">25gram</button>
+          <button class="divide-solid text-[#6E6E6E] border-[1px] border-[#6E6E6E] p-2.5">50gram</button>
+          <button class="divide-solid text-white border-[1px] border-[#6E6E6E] p-2.5 bg-[#252A31]">100gram</button>
+        </div>
+      </div>
+
+      <ul class="text-[#6E6E6E] list-disc pl-4 pt-4 lg:pt-0">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ullam!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ullam!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ullam!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ullam!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ullam!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ullam!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ullam!</li>
+      </ul>
+      <div class="flex gap-2.5 pt-8">
+        <a href="../Chackout/index.html"><button
+            class="py-2.5 px-8 bg-[#005C4E] border flex items-center justify-center text-white"><img
+              src="image/image 1.png" class="pr-2.5"> Check
+            Out</button></a>
+        <button class="border border-[#005C4E]"><img class="p-2.5" src="image/arcticons_tokopedia.png"></button>
+        <button class="border border-[#005C4E]"><img class="p-2.5" src="image/Vector.png"></button>
+        <button class="border border-[#005C4E]"><img class="p-2.5" src="image/Vector (1).png"></button>
+      </div>
+    </section>
+  </article>
+
+  <article class="container bg-[#005C4E]">
+    <div class="container">
+      <div class="flex text-white gap-10 pt-[70px] justify-start">
+        <h1 class="text-5xl" style="font-family: playfair display;">Review</h1>
+        <p class="pb-9 text-2xl w-[50%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit nam
+          ducimus
+          cupiditate.</p>
+      </div>
+
+      <div id="slider">
+        <div class="items">
+          <div
+            class="bg-white flex flex-col lg:flex-row lg:items-center lg:justify-center lg:py-[47px] lg:px-12 gap-6 lg:gap-[109px] p-6">
+            <div class=" lg:hidden">
+              <div class="flex items-center gap-x-8 pt-6">
+                <img src="image/1edf2fc2-9ac0-4275-a076-7fa20c94cabf-removebg-preview.png" class="w-[20%]">
+                <div>
+                  <p class="font-bold">Roronoa Zoro</p>
+                  <div class="flex">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill (1).png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-6/12">
+              <h1 class="text-5xl pb-[82px] text-[#005C4E] leading-normal" style="font-family: playfair display;">“buy
+                best thing for
+                your
+                home from homade crafting”</h1>
+              <div class="hidden lg:block">
+                <div class="flex items-center gap-[14px]">
+                  <img src="image/1edf2fc2-9ac0-4275-a076-7fa20c94cabf-removebg-preview.png" class="w-[20%]">
+                  <div>
+                    <p class="font-bold">Roronoa Zoro</p>
+                    <div class="flex">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill (1).png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-center lg:w-6/12">
+              <img src="image/Rectangle 817.png" class="w-[100%]">
+              <div class="flex lg:gap-4 pt-4 ">
+                <img src="image/Rectangle 816.png" class="w-[50%] lg:w-[48%]">
+                <img src="image/Rectangle 818.png" class="w-[50%] lg:w-[48%]">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div
+            class="bg-white flex flex-col lg:flex-row lg:items-center lg:justify-center lg:py-[47px] lg:px-12 gap-6 lg:gap-[109px] p-6">
+            <div class=" lg:hidden">
+              <div class="flex items-center gap-x-8 pt-6">
+                <img src="image/1edf2fc2-9ac0-4275-a076-7fa20c94cabf-removebg-preview.png" class="w-[20%]">
+                <div>
+                  <p class="font-bold">Roronoa Zoro</p>
+                  <div class="flex">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill (1).png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-6/12">
+              <h1 class="text-5xl pb-[82px] text-[#005C4E] leading-normal" style="font-family: playfair display;">“buy
+                best thing for
+                your
+                home from homade crafting”</h1>
+              <div class="hidden lg:block">
+                <div class="flex items-center gap-[14px]">
+                  <img src="image/1edf2fc2-9ac0-4275-a076-7fa20c94cabf-removebg-preview.png" class="w-[20%]">
+                  <div>
+                    <p class="font-bold">Roronoa Zoro</p>
+                    <div class="flex">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill (1).png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-center lg:w-6/12">
+              <img src="image/Rectangle 817.png" class="w-[100%]">
+              <div class="flex lg:gap-4 pt-4 ">
+                <img src="image/Rectangle 816.png" class="w-[50%] lg:w-[48%]">
+                <img src="image/Rectangle 818.png" class="w-[50%] lg:w-[48%]">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div
+            class="bg-white flex flex-col lg:flex-row lg:items-center lg:justify-center lg:py-[47px] lg:px-12 gap-6 lg:gap-[109px] p-6">
+            <div class=" lg:hidden">
+              <div class="flex items-center gap-x-8 pt-6">
+                <img src="image/1edf2fc2-9ac0-4275-a076-7fa20c94cabf-removebg-preview.png" class="w-[20%]">
+                <div>
+                  <p class="font-bold">Roronoa Zoro</p>
+                  <div class="flex">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill (1).png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-6/12">
+              <h1 class="text-5xl pb-[82px] text-[#005C4E] leading-normal" style="font-family: playfair display;">“buy
+                best thing for
+                your
+                home from homade crafting”</h1>
+              <div class="hidden lg:block">
+                <div class="flex items-center gap-[14px]">
+                  <img src="image/1edf2fc2-9ac0-4275-a076-7fa20c94cabf-removebg-preview.png" class="w-[20%]">
+                  <div>
+                    <p class="font-bold">Roronoa Zoro</p>
+                    <div class="flex">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill (1).png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-center lg:w-6/12">
+              <img src="image/Rectangle 817.png" class="w-[100%]">
+              <div class="flex lg:gap-4 pt-4 ">
+                <img src="image/Rectangle 816.png" class="w-[50%] lg:w-[48%]">
+                <img src="image/Rectangle 818.png" class="w-[50%] lg:w-[48%]">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div
+            class="bg-white flex flex-col lg:flex-row lg:items-center lg:justify-center lg:py-[47px] lg:px-12 gap-6 lg:gap-[109px] p-6">
+            <div class=" lg:hidden">
+              <div class="flex items-center gap-x-8 pt-6">
+                <img src="image/1edf2fc2-9ac0-4275-a076-7fa20c94cabf-removebg-preview.png" class="w-[20%]">
+                <div>
+                  <p class="font-bold">Roronoa Zoro</p>
+                  <div class="flex">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill.png">
+                    <img src="image/prime_star-fill (1).png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-6/12">
+              <h1 class="text-5xl pb-[82px] text-[#005C4E] leading-normal" style="font-family: playfair display;">“buy
+                best thing for
+                your
+                home from homade crafting”</h1>
+              <div class="hidden lg:block">
+                <div class="flex items-center gap-[14px]">
+                  <img src="image/1edf2fc2-9ac0-4275-a076-7fa20c94cabf-removebg-preview.png" class="w-[20%]">
+                  <div>
+                    <p class="font-bold">Roronoa Zoro</p>
+                    <div class="flex">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill.png">
+                      <img src="image/prime_star-fill (1).png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-center lg:w-6/12">
+              <img src="image/Rectangle 817.png" class="w-[100%]">
+              <div class="flex lg:gap-4 pt-4 ">
+                <img src="image/Rectangle 816.png" class="w-[50%] lg:w-[48%]">
+                <img src="image/Rectangle 818.png" class="w-[50%] lg:w-[48%]">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+        <div style="display: flex; justify-content: end; gap: 16px; padding-bottom: 70px;">
+          <button class="prev-button"><img src="./image/Group 1 (1).svg" alt=""></button>
+          <button class="next-button"><img src="./image/Group 1.svg" alt=""></button>
+        </div>  
+      
+     
+    </div>
+
+  </article>
+
+  <article class="container">
+    <section class="flex pt-[120px] pb-8 justify-between">
+      <p class="font-bold text-2xl "> Also Like Product</p>
+      <p class="flex items-center gap-4 ">view more <img src="image/ri_arrow-left-line.png"></p>
+    </section>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+
+      <div>
+        <img class="w-full" src="image/Rectangle 832 (2).png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img class="w-full" src="image/Rectangle 832 (1).png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img class="w-full" src="image/Rectangle 832 (4).png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img class="w-full" src="image/Rectangle 832 (5).png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <footer class="container  bg-[#005C4E] ">
+    <section class="container">
+      <div class="pt-[54px] flex flex-col lg:flex-row  lg:justify-between">
+        <div class=" flex flex-col justify-center lg:justify-normal items-center lg:items-start ">
+          <div class="flex items-center  gap-x-2.5">
+            <img src="image/Logo (2).png">
+            <a href="ms" class="font-bold text-sm text-white ">Mang Store</a>
+          </div>
+          <p class="text-sm text-white pt-[34px] pb-[26px] w-[242px] lg:w-[95%] text-center lg:text-left">Mangstore is
+            the
+            solution for high quality
+            goods you need</p>
+          <div class=" flex  pb-9 ">
+            <a href="#" class="fa fa-instagram text-white pl-[10px]"></a>
+            <a href="#" class="fa fa-whatsapp text-white pl-[18px]"></a>
+            <a href="#" class="fa fa-linkedin text-white pl-[18px]"></a>
+            <a href="#" class="fa fa-twitter text-white pl-[18px]"></a>
+          </div>
+
+        </div>
+        <div class="w-full lg:w-5/12 flex gap-6 lg:gap-[50px] justify-center">
+
+          <div class="menu-1 hidden lg:block">
+            <p class="text-sm text-white" style="font-family: Playfair Display;">Mangstore</p>
+            <p class="text-sm text-white pt-2.5">About Mangstore</p>
+            <p class="text-sm text-white pt[5px]">Home</p>
+            <p class="text-sm text-white pt[5px]">Product</p>
+            <p class="text-sm text-white pt[5px]">Blog</p>
+          </div>
+          <div class=" hidden lg:block">
+            <p class="text-sm  text-white" style="font-family: Playfair Display;">Buy</p>
+            <p class="text-sm  text-white pt-2.5">Men’s Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Woman’s Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Kids Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Sport Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Shoes</p>
+            <p class="text-sm  text-white pt-[5px] pb-[50px]">Head wear</p>
+          </div>
+          <div>
+            <p class="text-sm  text-white pb-2.5 hidden lg:block" style="font-family: Playfair Display;">Find us in</p>
+            <div class="flex flex-row lg:flex-col gap-6 lg:gap-2">
+              <button class="bg-white items-center flex rounded-[100px] py-2.5 px-6 text-[#005C4E]">Tokopedia <img
+                  src="image/maki_arrow.png" class="pl-2.5"></button>
+              <button class="bg-white items-center flex rounded-[100px] py-2.5 px-6  text-[#005C4E]">Shopee<img
+                  src="image/maki_arrow.png" class="pl-[29px]"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

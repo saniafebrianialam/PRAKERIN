@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+
+          padding: {
+            DEFAULT: '1rem',
+            sm: '2rem',
+            lg: '4rem',
+            xl: '5rem',
+            '2xl': '6rem',
+          },
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins:wght@200;400;500;600&display=swap"
+  rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans&family=Poppins:wght@200;400;500;600&display=swap"
+  rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+  <header class="container">
+    <div class="pb-[28px]">
+      <nav class="flex justify-between py-8 text-[#005C4E]">
+        <!-- Menu left -->
+        <ul class="flex gap-[18px] items-center">
+          <li><a href="/index.html" class="hover:font-bold text-sm font-Plus-Jakarta-sans">Home</a></li>
+          <li><a href="/page/Produk/index.html" class="font-bold text-sm font-Plus-Jakarta-sans">Produk</a></li>
+          <li><a href="/page/blog/index.html" class="hover:font-bold text-sm font-Plus-Jakarta-sans">Blog</a></li>
+        </ul>
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="image/Logo (1).png" class="h-10">
+          <a href="ms" class="pt-2 pl-2 font-bold text-sm">MangStore</a>
+        </div>
+
+        <!-- Menu Right -->
+        <ul class="flex items-center gap-[18px]">
+          <img src="image/Group 1597883047.png" class="h-6">
+          <img src="image/Group 1597883049.png" class="h-6">
+          <a href="/page/contact/index.html" class="hover:font-bold text-sm font-Plus-Jakarta-sans">Contact Us</a>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <article class=" container flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-x-6 ">
+    <h1 class="text-5xl text-[#005C4E]" style="font-family: playfair display;">All Product</h1>
+    <div class="h-[1px] w-full lg:w-[100px] bg-[#005C4E] "></div>
+    <p class="lg:w-[55%] text-[#6E6E6E]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aut optio omnis
+      animi error? Ea
+      ipsum
+      excepturi molestias at expedita ex harum omnis facilis quaerat reprehenderit, mollitia veritatis dignissimos
+      repellendus?</p>
+  </article>
+
+  <article class="container flex flex-col pb-5 lg:pb-8 lg:flex-row gap-y-5 lg:gap-x-5 pt-4 lg:pt-8  lg:py-[50px]">
+    <div class="border  p-4 lg:pl-4 lg:pr-[400px] border-[#4B4B4B] flex items-center">
+      <i class="fa fa-search text-[#6E6E6E] pr-2.5"></i>
+      <input type="search" placeholder="Search Something">
+    </div>
+    <section class="flex items-center gap-x-5">
+      <div class="border border-[#4B4B4B] p-4">
+        <select name="Category" id="Category" class="text-[#4B4B4B]">
+          <option value="sc">Category</option>
+          <option value="sc">Skin Care</option>
+          <option value="sc">Skin Care</option>
+          <option value="sc">Skin Care</option>
+          <option value="sc">Skin Care</option>
+          <option value="sc">Skin Care</option>
+          <option value="sc">Skin Care</option>
+        </select>
+      </div>
+
+      <div class="border border-[#4B4B4B] p-4 text-[#6E6E6E]">
+        <select name="" id="">
+          <option value="sc">Type</option>
+        </select>
+      </div>
+
+      <div class="border border-[#4B4B4B] p-4 text-[#6E6E6E]">
+        <select name="" id="">
+          <option value="sc">Style</option>
+        </select>
+      </div>
+
+      <div class="border border-[#4B4B4B] p-4 text-[#6E6E6E]">
+        <select name="" id="">
+          <option value="sc">Price</option>
+        </select>
+      </div>
+    </section>
+  </article>
+
+  <div class="overflow-hidden">
+    <div id="pbox" class="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+      <div id="image">
+        <div>
+          <a href="../Produk-detail/index.html"><img src="image/Rectangle 832 (5).png"></a>
+          <div style="padding: 20px 25px;">
+            <h1 style="font-weight: 700; color: black;  padding-bottom: 12px;">Krim Wajah</h1>
+            <div
+              style="display: flex; padding-bottom: 33px; justify-content: space-between; font-size: 14px; color: #9A9A9A;">
+              <p>Face wach</p>
+              <p>Rp.500.000.-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="image">
+        <div>
+          <a href="../Produk-detail/index.html"><img src="image/Rectangle 832 (5).png"></a>
+          <div style="padding: 20px 25px;">
+            <h1 style="font-weight: 700; color: black;  padding-bottom: 12px;">Krim Wajah</h1>
+            <div
+              style="display: flex; padding-bottom: 33px; justify-content: space-between; font-size: 14px; color: #9A9A9A;">
+              <p>Face wach</p>
+              <p>Rp.500.000.-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="image">
+        <div>
+          <a href="../Produk-detail/index.html"><img src="image/Rectangle 832 (5).png"></a>
+          <div style="padding: 20px 25px;">
+            <h1 style="font-weight: 700; color: black;  padding-bottom: 12px;">Krim Wajah</h1>
+            <div
+              style="display: flex; padding-bottom: 33px; justify-content: space-between; font-size: 14px; color: #9A9A9A;">
+              <p>Face wach</p>
+              <p>Rp.500.000.-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="image">
+        <div>
+          <a href="../Produk-detail/index.html"><img src="image/Rectangle 832 (5).png"></a>
+          <div style="padding: 20px 25px;">
+            <h1 style="font-weight: 700; color: black;  padding-bottom: 12px;">Krim Wajah</h1>
+            <div
+              style="display: flex; padding-bottom: 33px; justify-content: space-between; font-size: 14px; color: #9A9A9A;">
+              <p>Face wach</p>
+              <p>Rp.500.000.-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="image">
+        <div>
+          <a href="../Produk-detail/index.html"><img src="image/Rectangle 832 (5).png"></a>
+          <div style="padding: 20px 25px;">
+            <h1 style="font-weight: 700; color: black;  padding-bottom: 12px;">Krim Wajah</h1>
+            <div
+              style="display: flex; padding-bottom: 33px; justify-content: space-between; font-size: 14px; color: #9A9A9A;">
+              <p>Face wach</p>
+              <p>Rp.500.000.-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="image">
+        <div>
+          <a href="../Produk-detail/index.html"><img src="image/Rectangle 832 (5).png"></a>
+          <div style="padding: 20px 25px;">
+            <h1 style="font-weight: 700; color: black;  padding-bottom: 12px;">Krim Wajah</h1>
+            <div
+              style="display: flex; padding-bottom: 33px; justify-content: space-between; font-size: 14px; color: #9A9A9A;">
+              <p>Face wach</p>
+              <p>Rp.500.000.-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="image">
+        <div>
+          <a href="../Produk-detail/index.html"><img src="image/Rectangle 832 (5).png"></a>
+          <div style="padding: 20px 25px;">
+            <h1 style="font-weight: 700; color: black;  padding-bottom: 12px;">Krim Wajah</h1>
+            <div
+              style="display: flex; padding-bottom: 33px; justify-content: space-between; font-size: 14px; color: #9A9A9A;">
+              <p>Face wach</p>
+              <p>Rp.500.000.-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="image">
+        <div>
+          <a href="../Produk-detail/index.html"><img src="image/Rectangle 832 (5).png"></a>
+          <div style="padding: 20px 25px;">
+            <h1 style="font-weight: 700; color: black;  padding-bottom: 12px;">Krim Wajah</h1>
+            <div
+              style="display: flex; padding-bottom: 33px; justify-content: space-between; font-size: 14px; color: #9A9A9A;">
+              <p>Face wach</p>
+              <p>Rp.500.000.-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+      <div>
+        <a href="../Produk-detail/index.html"><img class="w-full" src="image/Rectangle 832 (5).png"></a>
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <img class="w-full" src="image/Rectangle 832 (2).png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <img class="w-full" src="image/Rectangle 832 (1).png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+
+        <img class="w-full" src="image/Rectangle 832.png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+
+        <a href="../Produk-detail/index.html"><img class="w-full" src="image/Rectangle 832 (5).png"></a>
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <img class="w-full" src="image/Rectangle 832 (2).png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <img class="w-full" src="image/Rectangle 832 (1).png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+
+        <img class="w-full" src="image/Rectangle 832.png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+
+        <a href="../Produk-detail/index.html"><img class="w-full" src="image/Rectangle 832 (5).png"></a>
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <img class="w-full" src="image/Rectangle 832 (2).png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <img class="w-full" src="image/Rectangle 832 (1).png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+
+        <img class="w-full" src="image/Rectangle 832.png">
+        <div class="py-5 px-[25px]">
+          <h1 class="font-bold text-black  pb-[12px]">Krim Wajah</h1>
+          <div class="lg:flex lg:pb-[33px] justify-between text-sm text-[#9A9A9A]">
+            <p>Face wach</p>
+            <p>Rp.500.000.-</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <article class="container flex gap-4 justify-center pt-12 pb-[101px]">
+    <button id="load-more"
+      class="border border-[#005C4E] cursor-pointer w-[50px] h-[50px]  hover:text-white hover:bg-[#005C4E]">1</button>
+    <button id="load-more"
+      class="border border-[#005C4E] cursor-pointer  hover:text-white hover:bg-[#005C4E] w-[50px] h-[50px] ">2</button>
+    <button id="load-more"
+      class="border border-[#005C4E] cursor-pointer  hover:text-white hover:bg-[#005C4E] w-[50px] h-[50px] ">3</button>
+    <button id="load-more"
+      class="border border-[#005C4E] cursor-pointer  hover:text-white hover:bg-[#005C4E] w-[50px] h-[50px] ">...</button>
+    <button id="load-more"
+      class="px-8 py-4 h-[50px] border border-[#005C4E] cursor-pointer  hover:text-white hover:bg-[#005C4E] flex items-center">Next
+      <img src="image/maki_arrow.png" class="pl-4"></button>
+  </article>
+
+  <footer class="container  bg-[#005C4E] ">
+    <section class="container">
+      <div class="pt-[54px] flex flex-col lg:flex-row  lg:justify-between">
+        <div class=" flex flex-col justify-center lg:justify-normal items-center lg:items-start ">
+          <div class="flex items-center  gap-x-2.5">
+            <img src="image/Logo (2).png">
+            <a href="ms" class="font-bold text-sm text-white ">Mang Store</a>
+          </div>
+          <p class="text-sm text-white pt-[34px] pb-[26px] w-[242px] lg:w-[95%] text-center lg:text-left">Mangstore is
+            the
+            solution for high quality
+            goods you need</p>
+          <div class=" flex  pb-9 ">
+            <a href="#" class="fa fa-instagram text-white pl-[10px]"></a>
+            <a href="#" class="fa fa-whatsapp text-white pl-[18px]"></a>
+            <a href="#" class="fa fa-linkedin text-white pl-[18px]"></a>
+            <a href="#" class="fa fa-twitter text-white pl-[18px]"></a>
+          </div>
+
+        </div>
+        <div class="w-full lg:w-5/12 flex gap-6 lg:gap-[50px] justify-center">
+
+          <div class="menu-1 hidden lg:block">
+            <p class="text-sm text-white" style="font-family: Playfair Display;">Mangstore</p>
+            <p class="text-sm text-white pt-2.5">About Mangstore</p>
+            <p class="text-sm text-white pt[5px]">Home</p>
+            <p class="text-sm text-white pt[5px]">Product</p>
+            <p class="text-sm text-white pt[5px]">Blog</p>
+          </div>
+          <div class=" hidden lg:block">
+            <p class="text-sm  text-white" style="font-family: Playfair Display;">Buy</p>
+            <p class="text-sm  text-white pt-2.5">Men’s Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Woman’s Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Kids Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Sport Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Shoes</p>
+            <p class="text-sm  text-white pt-[5px] pb-[50px]">Head wear</p>
+          </div>
+          <div>
+            <p class="text-sm  text-white pb-2.5 hidden lg:block" style="font-family: Playfair Display;">Find us in</p>
+            <div class="flex flex-row lg:flex-col gap-6 lg:gap-2">
+              <button class="bg-white items-center flex rounded-[100px] py-2.5 px-6 text-[#005C4E]">Tokopedia <img
+                  src="image/maki_arrow.png" class="pl-2.5"></button>
+              <button class="bg-white items-center flex rounded-[100px] py-2.5 px-6  text-[#005C4E]">Shopee<img
+                  src="image/maki_arrow.png" class="pl-[29px]"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

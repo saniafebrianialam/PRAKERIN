@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+
+          padding: {
+            DEFAULT: '1rem',
+            sm: '2rem',
+            lg: '4rem',
+            xl: '5rem',
+            '2xl': '6rem',
+          },
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins:wght@200;400;500;600&display=swap"
+  rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans&family=Poppins:wght@200;400;500;600&display=swap"
+  rel="stylesheet">
+
+<body>
+  <header class="container">
+    <div class="pb-[28px]">
+      <nav class="flex justify-between py-8 text-[#005C4E]">
+        <!-- Menu left -->
+        <ul class="flex gap-[18px] items-center">
+          <li><a href="/index.html" class="hover:font-bold text-sm font-Plus-Jakarta-sans">Home</a></li>
+          <li><a href="/page/Produk/index.html" class="hover:font-bold text-sm font-Plus-Jakarta-sans">Produk</a></li>
+          <li><a href="/page/blog/index.html" class="hover:font-bold text-sm font-Plus-Jakarta-sans">Blog</a></li>
+        </ul>
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="image/Logo (1).png" class="h-10">
+          <a href="ms" class="pt-2 pl-2 font-bold text-sm">MangStore</a>
+        </div>
+
+        <!-- Menu Right -->
+        <ul class="flex items-center gap-[18px]">
+          <img src="image/Group 1597883047.png" class="h-6">
+          <img src="image/Group 1597883049.png" class="h-6">
+          <a href="/page/contact/index.html" class="font-bold text-sm font-Plus-Jakarta-sans">Contact Us</a>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <section class="container relative lg:pb-[700px]">
+    <div
+      class="bg-[#005C4E] lg:w-[510px] lg:h-[436px] z-10 lg:absolute top-[97px] flex flex-col gap-y-4 text-white pl-[41px] pt-[37px] pr-[30px] ">
+      <div class="flex flex-col gap-y-2">
+        <h1 class="text-w text-[32px] font-bold leading-normal font-[playerfair]">Lets Talk’s</h1>
+        <p class="font-base leading-[26px] text-base">Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+          sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
+        </p>
+      </div>
+      <div class="flex flex-col gap-y-2">
+        <div>
+          <p class="flex gap-x-4 items-start text-base leading-normal"><img src="image/octicon_location-16.svg"
+              alt="">Jalan Melati No. 123 Kelurahan Bunga Indah Kecamatan Kota Bahagia Kota Semuanya Bahagia Provinsi
+            Damai Sejahtera Kode Pos: 12345
+        </div>
+        <div>
+          <p class="flex gap-x-4 items-start text-base leading-normal"><img src="image/humbleicons_mail.svg"
+              alt="">contact@mangstore.com
+          <div>
+          </div>
+          <div>
+            <p class="flex gap-x-4 items-start text-base leading-normal pb-12 lg:pb-0"><img src="image/fluent_call-12-regular.svg"
+                alt="">(+62) 857 123 321 1
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#EFF2F5] pb-12 lg:pb-0 lg:h-[629px] lg:absolute lg:w-[969px] right-0 ">
+      <div class="pt-[60px] px-12 lg:absolute right-[64px] flex flex-col gap-y-4 ">
+        <div class=" bg-white pl-7 py-[21px]  lg:w-[552px]  "><input type="text" name="" id="" placeholder="Name"></div>
+        <div class=" bg-white pl-7 py-[21px]  lg:w-[552px]  "><input type="text" name="" id="" placeholder="Email">
+        </div>
+        <div class=" bg-white pl-7 py-[21px]  lg:w-[552px]  "><input type="text" name="" id=""
+            placeholder="Phone Number">
+        </div>
+        <div class=" bg-white pl-7 pt-[21px] flex flex-col  gap-y-[150px] ">
+          <input type="text" name="" id="" placeholder="Description">
+          <div class="flex justify-end pr-4 pb-4 ">
+            <button class="bg-[#005C4E] rounded-[100px] text-white px-4 py-2.5 flex items-center gap-x-2">Send <img
+                src="image/fluent_send-24-filled.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="container  bg-[#005C4E] ">
+    <section class="container">
+      <div class="pt-[54px] flex flex-col lg:flex-row  lg:justify-between">
+        <div class=" flex flex-col justify-center lg:justify-normal items-center lg:items-start ">
+          <div class="flex items-center  gap-x-2.5">
+            <img src="image/Logo (2).png">
+            <a href="ms" class="font-bold text-sm text-white ">Mang Store</a>
+          </div>
+          <p class="text-sm text-white pt-[34px] pb-[26px] w-[242px] lg:w-[95%] text-center lg:text-left">Mangstore is
+            the
+            solution for high quality
+            goods you need</p>
+          <div class=" flex  pb-9 ">
+            <a href="#" class="fa fa-instagram text-white pl-[10px]"></a>
+            <a href="#" class="fa fa-whatsapp text-white pl-[18px]"></a>
+            <a href="#" class="fa fa-linkedin text-white pl-[18px]"></a>
+            <a href="#" class="fa fa-twitter text-white pl-[18px]"></a>
+          </div>
+
+        </div>
+        <div class="w-full lg:w-5/12 flex gap-6 lg:gap-[50px] justify-center">
+
+          <div class="menu-1 hidden lg:block">
+            <p class="text-sm text-white" style="font-family: Playfair Display;">Mangstore</p>
+            <p class="text-sm text-white pt-2.5">About Mangstore</p>
+            <p class="text-sm text-white pt[5px]">Home</p>
+            <p class="text-sm text-white pt[5px]">Product</p>
+            <p class="text-sm text-white pt[5px]">Blog</p>
+          </div>
+          <div class=" hidden lg:block">
+            <p class="text-sm  text-white" style="font-family: Playfair Display;">Buy</p>
+            <p class="text-sm  text-white pt-2.5">Men’s Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Woman’s Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Kids Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Sport Wear</p>
+            <p class="text-sm  text-white pt-[5px]">Shoes</p>
+            <p class="text-sm  text-white pt-[5px] pb-[50px]">Head wear</p>
+          </div>
+          <div>
+            <p class="text-sm  text-white pb-2.5 hidden lg:block" style="font-family: Playfair Display;">Find us in</p>
+            <div class="flex flex-row lg:flex-col gap-6 lg:gap-2">
+              <button class="bg-white items-center flex rounded-[100px] py-2.5 px-6 text-[#005C4E]">Tokopedia <img
+                  src="image/maki_arrow.png" class="pl-2.5"></button>
+              <button class="bg-white items-center flex rounded-[100px] py-2.5 px-6  text-[#005C4E]">Shopee<img
+                  src="image/maki_arrow.png" class="pl-[29px]"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </footer>
+</body>
+
+</html>
